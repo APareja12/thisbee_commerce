@@ -4,76 +4,76 @@ const menuItems = document.querySelectorAll(".menuItem");
 const products = [
   {
     id: 1,
-    title: "Air Force",
+    title: "Herbal Protocol",
     price: 119,
     colors: [
       {
         code: "black",
-        img: "./img/air.png",
+        img: "./img/herbal_proto.jpg",
       },
       {
         code: "darkblue",
-        img: "./img/air2.png",
+        img: "./img/herbal2.jpg",
       },
     ],
   },
   {
     id: 2,
-    title: "Air Jordan",
+    title: "Ayurveda",
     price: 149,
     colors: [
       {
         code: "lightgray",
-        img: "./img/jordan.png",
+        img: "./img/ayurveda.jpg",
       },
       {
         code: "green",
-        img: "./img/jordan2.png",
+        img: "./img/ayurveda2.jpg",
       },
     ],
   },
   {
     id: 3,
-    title: "Blazer",
+    title: "Acupuncture",
     price: 109,
     colors: [
       {
         code: "lightgray",
-        img: "./img/blazer.png",
+        img: "./img/acu1.jpg",
       },
       {
         code: "green",
-        img: "./img/blazer2.png",
+        img: "./img/acu2.jpg",
       },
     ],
   },
   {
     id: 4,
-    title: "Crater",
+    title: "Workshops",
     price: 129,
     colors: [
       {
         code: "black",
-        img: "./img/crater.png",
+        img: "./img/group1.jpg",
       },
       {
         code: "lightgray",
-        img: "./img/crater2.png",
+        img: "./img/workshop.jpg",
       },
     ],
   },
   {
     id: 5,
-    title: "Hippie",
+    title: "Guided Meditations",
     price: 99,
     colors: [
       {
         code: "gray",
-        img: "./img/hippie.png",
+        img: "./img/meditation.jpg",
       },
       {
         code: "black",
-        img: "./img/hippie2.png",
+        img: "./img/meditate2.jpg",
       },
     ],
   },
@@ -100,7 +100,7 @@ menuItems.forEach((item, index) => {
     currentProductPrice.textContent = "$" + choosenProduct.price;
     currentProductImg.src = choosenProduct.colors[0].img;
 
-    //assign new colors
+    //assign new gallery photo
     currentProductColors.forEach((color, index) => {
       color.style.backgroundColor = choosenProduct.colors[index].code;
     });
