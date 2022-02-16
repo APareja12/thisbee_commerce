@@ -462,6 +462,10 @@ footer {
     padding: 20px;
   }
 
+  .logo{
+    width: 200px;
+  }
+
   .search{
     display: none;
   }
